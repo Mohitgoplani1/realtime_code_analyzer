@@ -1,0 +1,98 @@
+/* Root styling for dark theme */
+body {
+  background-color: #000000;
+  color: #00ff99; /* Cyber green text */
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main app container */
+.app-container {
+  padding: 20px;
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* App Title */
+.app-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ff99;
+  margin-bottom: 10px;
+}
+.ps-title,.feed,.code-editor-title{
+    font-size: 2rem;
+}
+
+
+/* Split-Screen Layout */
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 80vh; /* Takes most of the screen */
+}
+
+/* Left Panel: Problem Statement & AI Feedback */
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-right: 2px solid #010202;
+}
+
+/* Problem Statement Input */
+.problem-input {
+  
+  
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 0px;
+  border: 2px solid #00ff99;
+  border-radius: 5px;
+  background: rgba(33, 33, 33, 0.8);
+  color: #00ff99;
+  box-shadow: 0 0 10px #00ff99;
+}
+
+/* AI Feedback Box */
+.feedback-box {
+  font-size: 22px;
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #00ff99;
+  border-radius: 5px;
+  background: rgba(33, 33, 33, 0.8);
+  color: #00ff99;
+  box-shadow: 0 0 10px #00ff99;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Right Panel: Code Editor */
+.right-panel {
+  flex: 1.5;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Code Editor Styling */
+.code-editor {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #86d1b3;
+  box-shadow: 0 0 10px #00ff99;
+}
