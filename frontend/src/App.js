@@ -4,7 +4,8 @@ import { io } from "socket.io-client";
 import Loader from "./components/Loader";
 import "./App.css";
 
-const SERVER_URL =process.env.SERVER_URL; 
+const SERVER_URL = process.env.REACT_APP_SERVER_URL; 
+console.log(SERVER_URL);
 
 function App() {
   const [socket, setSocket] = useState(null);
