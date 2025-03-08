@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+Real-Time Code Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Overview
 
-## Available Scripts
+The Real-Time Code Analyzer is a web-based tool that allows users to input a problem statement, write code in an embedded editor, and receive real-time AI-powered feedback on their code. The system evaluates whether the code aligns with the given problem statement and provides guidance as the user types.
 
-In the project directory, you can run:
+🚀 Features
 
-### `npm start`
+Real-Time Code Analysis: Get instant AI feedback as you write code.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Split-Screen Layout: Problem statement & AI feedback on the left, code editor on the right.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+WebSocket Integration: Ensures real-time communication between the frontend and backend.
 
-### `npm test`
+Monaco Code Editor: A powerful code editor with syntax highlighting.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Loading Screen: A hacker-style loading animation when the app starts.
 
-### `npm run build`
+Typing Effect in AI Feedback: Simulates AI typing the response for a better user experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React.js
 
-### `npm run eject`
+Monaco Editor (for code editing)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+WebSockets (Socket.io)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Tailwind CSS (for styling)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Node.js with Express
 
-## Learn More
+Socket.io (for real-time communication)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+OpenAI API / Gemini API (for AI-based code analysis)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📦 Installation & Setup
 
-### Code Splitting
+1️⃣ Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+git clone https://github.com/yourusername/realtime-code-analyzer.git
+cd realtime-code-analyzer
 
-### Analyzing the Bundle Size
+2️⃣ Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend
 
-### Making a Progressive Web App
+cd backend
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Frontend
 
-### Advanced Configuration
+cd frontend
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3️⃣ Set up OpenAI/Gemini API Key
 
-### Deployment
+Create a .env file in the backend folder and add:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 
-### `npm run build` fails to minify
+4️⃣ Start the development servers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend
+
+cd backend
+npm start
+
+Frontend
+
+cd frontend
+npm start
+
+🎮 Usage
+
+Enter a problem statement in the left panel.
+
+Write your code in the Monaco Editor on the right.
+
+AI feedback will appear in real-time as you type.
+
+🎨 UI Preview
+
+Loading Animation (Before the app loads)
+
+Split-Screen Layout
+
+Typing Effect for AI Feedback
+
+🤝 Contributing
+
+Feel free to open issues and submit pull requests. Contributions are always welcome! 🎉
+
+📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+📬 Contact
+
+For any questions or suggestions, reach out via email at your-email@example.com.
+
