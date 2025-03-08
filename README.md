@@ -42,7 +42,7 @@ OpenAI API / Gemini API (for AI-based code analysis)
 
 1️⃣ Clone the repository
 
-git clone https://github.com/yourusername/realtime-code-analyzer.git
+git clone https://github.com/Mohitgoplani1/realtime-code-analyzer.git
 cd realtime-code-analyzer
 
 2️⃣ Install dependencies
