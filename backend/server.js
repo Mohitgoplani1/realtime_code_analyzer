@@ -8,7 +8,7 @@ const axios = require("axios");
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
-  cors: { origin: "http://localhost:3000", methods: ["GET", "POST"] }
+  cors: { origin: process.env.Frontend_URL, methods: ["GET", "POST"] }
 });
 
 // API Key for Gemini (assuming you have access to Gemini AI endpoints)
