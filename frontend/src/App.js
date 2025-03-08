@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import Loader from "./components/Loader";
 import "./App.css";
 
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL =process.env.SERVER_URL; 
 
 function App() {
   const [socket, setSocket] = useState(null);
